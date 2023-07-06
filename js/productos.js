@@ -15,15 +15,11 @@ function guardarProductosLs() {
     fetch("productos.json")
     .then(respuesta => respuesta.json())
     .then(data => {
-    localStorage.setItem("productos", JSON.stringify(data))
+    localStorage.setItem("resinas", JSON.stringify(data))
     })
 }
 
-function guardarProductosLs (resinas){
 
-    localStorage.setItem("Resinas", JSON.stringify (resinas));
-
-}
 guardarProductosLs (resinas);
 
 function cargarProductosLS (){
